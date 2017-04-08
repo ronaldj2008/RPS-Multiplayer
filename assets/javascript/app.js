@@ -1,16 +1,15 @@
 $(document).ready(function () {
 
     // Initialize Firebase.
-    var config = {
-        apiKey: 'AIzaSyBpPVhMgO29Gx35FZprI76f7TIJsoAymqs',
-        authDomain: 'rps-617d2.firebaseapp.com',
-        databaseURL: 'https://rps-617d2.firebaseio.com',
-        storageBucket: 'rps-617d2.appspot.com',
-        messagingSenderId: '672416909249'
-    };
-
-    var app = firebase.initializeApp(config);
-
+  var config = {
+    apiKey: "AIzaSyCjQHnDIbjuo0giHO_baAD1BZt9XahNPNE",
+    authDomain: "rps-game-7c710.firebaseapp.com",
+    databaseURL: "https://rps-game-7c710.firebaseio.com",
+    projectId: "rps-game-7c710",
+    storageBucket: "rps-game-7c710.appspot.com",
+    messagingSenderId: "10283923672"
+  };
+  firebase.initializeApp(config);
     // Alias database and sub-levels.
     var database = firebase.database();
     var chats = database.ref('chat');
